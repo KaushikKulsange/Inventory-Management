@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "7e0cfddd-ae33-4795-bef5-7525411851a2",
+		"name": "Inventory-Management-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27794164"
+	},
+	"item": [
+		{
+			"name": "Get-Product-By-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/GetProduct/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"GetProduct",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All-Pproducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/GetAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"GetAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ball\",\r\n  \"description\": \"Leather Ball\",\r\n  \"stockQuantity\": 50,\r\n  \"lowStockThreshold\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5270/api/Product/AddProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"AddProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ball\",\r\n   \"description\": \"Leather Cricket Ball\",\r\n    \"stockQuantity\": 55,\r\n    \"lowStockThreshold\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5270/api/Product/UpdateProduct/2005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"UpdateProduct",
+						"2005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Stock-By -ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/AddStock/2005/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"AddStock",
+						"2005",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove-Stock-By -ID Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/ReduceStock/2005/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"ReduceStock",
+						"2005",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LowStockProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/LowStockProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"LowStockProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5270/api/Product/DeleteProduct/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5270",
+					"path": [
+						"api",
+						"Product",
+						"DeleteProduct",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
