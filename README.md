@@ -42,8 +42,9 @@ Steps To Run:
 -Inventory_Management_System_API project there is appsettinfs.json file. Change 'ConnectionStrings' to your database connection string.
 -In nuget package manager console,Set 'Inventory_Management_System.DbConntext' as Default Project.
 -Execute These two commands in sequence.
-	Add-Migration InitialCreate -StartupProject Inventory-Management-System-API
-	Update-Database -StartupProject Inventory-Management-System-API
+	-Add-Migration InitialCreate -StartupProject Inventory-Management-System-API;
+	
+	-Update-Database -StartupProject Inventory-Management-System-API;
 -Start the Project.
 
 3)How to run Test Cases:
