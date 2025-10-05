@@ -1,8 +1,12 @@
 # Inventory-Management
 1)A brief description of the project.
+
 Project Name:Inventory Management System API
+
 Language : C#
+
 Technology : ASP.Net Core Version 8.0, Entity Framework.
+
 Database: MS-SQL
 
 Description:-
@@ -31,6 +35,7 @@ API IN Project:
 
 
 2)Instructions to run this project locally.
+
 Software Requirements:
 	IDE: Visual Studio 2022 (or later)
 	Framework: .NET 8.0 / ASP.NET Core 8.0
@@ -49,6 +54,7 @@ Steps To Run:
 -Start the Project.
 
 3)How to run Test Cases:
+
 Postamn Collection is added in this repository to run test cases.
 Import collection in Postman. Or,Test Using Swagger UI.
 
